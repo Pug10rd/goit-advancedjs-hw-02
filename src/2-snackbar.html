@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 3</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Normalizer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <section class="section nav-section">
+        <div class="container nav-container">
+            <a class="nav-link" href="./index.html">Home</a>
+        </div>
+    </section>
+
+    <section class="section snackbar-section">
+        <div class="container snackbar-container">
+            <form class="form">
+                <label>
+                    Delay (ms)
+                    <input type="number" name="delay" required />
+                </label>
+
+                <fieldset>
+                    <legend>&nbsp;State&nbsp;</legend>
+                    <label>
+                        <input type="radio" name="state" value="fulfilled" required />
+                        Fulfilled
+                    </label>
+                    <label>
+                        <input type="radio" name="state" value="rejected" required />
+                        Rejected
+                    </label>
+                </fieldset>
+
+                <button type="submit">Create notification</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="./js/config/iziToast.js"></script>
+    <script type="module" src="./js/2-snackbar.js"></script>
+</body>
+
+</html>

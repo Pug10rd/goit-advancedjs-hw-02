@@ -1,0 +1,81 @@
+.form label[for='delay'] {
+    color: #2e2f42;
+
+    display: block;
+}
+
+.form input[name='delay'] {
+    width: 360px;
+    height: 40px;
+    padding: 8px 16px;
+
+    border-radius: 4px;
+    border: 1px solid #808080;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 16px;
+
+    color: #2e2f42;
+
+    transition: border-color var(--fast-trns);
+
+    &:hover {
+        border-color: #000;
+    }
+}
+
+.form fieldset {
+    display: block;
+    margin: 0;
+
+    width: 360px;
+    padding: 24px 48px 8px;
+
+    border-radius: 4px;
+    border: 1px solid #808080;
+
+    display: flex;
+    justify-content: space-between;
+
+    transition: border-color var(--fast-trns);
+
+    &:hover {
+        border-color: #000;
+    }
+}
+
+.form legend {
+    margin-left: -24px;
+}
+
+.form label[for='state'],
+.form input[name='state'] {
+    margin-top: -24px;
+}
+
+.form button {
+    margin-top: 24px;
+    width: 360px;
+
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 8px;
+    background: #4e75ff;
+
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+
+    transition: background-color var(--fast-trns);
+
+    &:hover {
+        background-color: #6c8cff;
+    }
+}
+
+input[type='radio'] {
+    transform: scale(1.5);
+}
